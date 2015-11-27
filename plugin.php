@@ -83,7 +83,7 @@ class ETPlugin_Signature extends ETPlugin {
 		}
 		else
 		{
-			$signature = $post["preferences"]["signature"];
+			$signature = ET::formatter()->init($post["preferences"]["signature"])->format()->get();
 			addToArray($formatted["footer"], "<p class='signature-no-likes'>".substr($signature,0,C("plugin.Signature.characters"))."</p>", 0);
 		}
 	}
