@@ -1,16 +1,23 @@
 .signature {
     border-top:1px solid #eee;
-    font-size:11px;
-    padding: 5px 12px;
+    font-size:90%;
+    padding: 5px 15px;
     margin: 1px 0 0;
     color:#999;
     word-wrap: break-word;
 }
 .signature p {margin-bottom:0}
+.signature img {
+	max-width: 100%;
+}
 .signature-no-likes {
     border-top:1px solid #eee;
-    font-size:11px;
-    padding: 5px 12px;
+    font-size:90%;
+    padding: 5px 15px;
     margin:1px 0 0;
     color:#999;
+    word-wrap: break-word;
+}
+.signature-no-likes img {
+	max-width: 100%;
 }
