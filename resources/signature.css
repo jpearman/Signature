@@ -1,3 +1,10 @@
+.signature-settings{
+    max-height: 120px;
+    overflow: hidden;
+}
+.signature-settings img {
+    max-width: 100%;
+}
 .signature {
     border-top:1px solid #eee;
     font-size:90%;
@@ -5,6 +12,8 @@
     margin: 1px 0 0;
     color:#999;
     word-wrap: break-word;
+    max-height: 120px;
+    overflow: hidden;
 }
 .signature p {margin-bottom:0}
 .signature img {
@@ -17,6 +26,8 @@
     margin:1px 0 0;
     color:#999;
     word-wrap: break-word;
+    max-height: 120px;
+    overflow: hidden;
 }
 .signature-no-likes img {
 	max-width: 100%;

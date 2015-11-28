@@ -24,6 +24,7 @@ class ETPlugin_Signature extends ETPlugin {
 
 	function handler_settingsController_initGeneral($sender, $form)
 	{
+		$sender->addCSSFile($this->resource("signature.css"));
 		$form->addSection("signature", T("Signature"), array("after" => "privacy"));
 		$form->setValue("signature", ET::$session->preference("signature"));
 		$form->addField("signature", "signature", array($this, "fieldSignature"), array($this, "saveSignature"));
@@ -35,7 +36,7 @@ class ETPlugin_Signature extends ETPlugin {
 
 		if ($signature)
 		{
-			return $form->input("signature", "text")." <small>(".T("Max characters:")." ".C("plugin.Signature.characters").", ".T("BBCode Allowed").")</small><br /><br /><small>".$signature."</small>";
+			return $form->input("signature", "text")." <small>(".T("Max characters:")." ".C("plugin.Signature.characters").", ".T("BBCode Allowed").")</small><br /><br /><div class='signature-settings'><small>".$signature."</small></div>";
 		}
 		else
 		{
